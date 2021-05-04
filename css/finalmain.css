@@ -1,0 +1,368 @@
+header{
+    width: 100%;
+    background-color: white;
+    position: fixed;
+    z-index: 9999;
+    height: 20%;
+}
+h1{
+    font-family: 'Nanum Gothic', sans-serif;
+    font-size: 35px;
+    color: #111;
+    margin: 0px 10px -5px 10px;
+    z-index: 9999;
+}
+a{
+    text-decoration: none;
+    color: black;
+    z-index: 9999;
+}
+body {
+    margin:0 auto;
+    font-family: 'Nanum Gothic', sans-serif;
+}
+img{
+    margin: 10px 0px -10px 10px;
+    width: 90px;
+    height: 90px;
+}
+#menu{
+    position: fixed;
+    width: 100%;
+    z-index: 9999;
+    left: 0;
+}
+#menu ul {
+    list-style-type: none;
+    padding: 0;
+    overflow: hidden;
+    background-color: #444;
+}
+
+#menu li {
+    float: left;
+}
+
+#menu li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+#menu li a:hover:not(.active) {
+    background-color: #2196F3;
+}
+
+.active {
+    background-color: #4CAF50;
+}
+.split{
+    margin-top: 10%;
+    height: 70%;
+    width: 50%;
+    position:absolute;
+    z-index: 1;
+    top: 0;
+    overflow-x: hidden;
+    padding-top: 20px;
+}
+.left{
+    left: 0;
+    background-color: #e1e1e1;
+
+}
+.right{
+    right: 0;
+    background-color: bisque;
+
+}
+.centered{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+.centered img{
+    width: 120px;
+    border-radius: 50%;
+}
+.button{
+    border-radius: 4px;
+    background-color: #f4511e;
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 24px;
+    padding: 10px 10px;
+    width: 210px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+}
+.button span{
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+.button span:after{
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+.button:hover span{
+    padding-right: 25px;
+}
+.button:hover span:after{
+    opacity: 1;
+    right: 0;
+}
+*{
+    box-sizing: border-box;
+}
+.section2{
+    background-color: #bddb7b; 
+    height: 400px;
+    z-index: 9999;
+    margin-top: 42%;
+}
+table{
+    border-collapse: collapse;
+    width: 75%;
+    background-color: white;
+}
+table, td, th{
+    border: 0.03px solid gray;
+    text-align: center;
+    height: 50px;
+    margin: 0 auto;
+}
+#info th{
+    background-color: #f2f2f2;
+}
+.column{
+    float: left;
+    width: 33%;
+    padding: 10px;
+    height: 450px;
+
+}
+.row::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+footer{
+    margin-top: 5%;
+}
+.chart {
+width: 100%;
+min-height: 350px;
+}
+.row {
+margin:0 !important;
+}
+
+section {
+    padding: 16px;
+    height: 40%;
+}
+@media screen and (min-width: 2048px){
+    h1{
+        margin: 0 auto;
+    }
+    header{
+        height: 10%;
+    }
+    #menu{
+        width: 100%;
+    }
+    .split{
+        margin-top: 5%;
+        height: 60%;
+        width: 50%;
+        position: absolute;
+        z-index: 1;
+        top: 0;
+        overflow-x: hidden;
+        padding-top: 20px;
+    }
+    p{
+        font-size: 20px;
+    }
+    .section2{
+        margin-top: 48%;
+    }
+    .column{
+        width: 33%;
+    }
+    footer{
+        margin-top: 8%;
+    }
+    .chart{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 1440px){
+    h1{
+        margin: 0 auto;
+    }
+    header{
+        height: 15%;
+    }
+    #menu{
+        width: 100%;
+    }
+    .split{
+    margin-top: 10.5%;
+    height: 50%;
+    width: 50%;
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    overflow-x: hidden;
+    padding-top: 20px;
+    }
+    p{
+        font-size: 20px;
+    }
+    .section2{
+        margin-top: 41%;
+        height: 400px
+    }
+    .column{
+        width: 33%;
+    }
+    footer{
+        margin-top: 5%;
+    }
+    .chart{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 1024px){
+    h1{
+        margin: 0 auto;
+    }
+    header{
+        height: 18%;
+    }
+    #menu{
+        width: 100%;
+    }
+    .split{
+        margin-top: 15%;
+        height: 65%;
+        width: 50%;
+        position: absolute;
+        z-index: 1;
+        top: 0;
+        overflow-x: hidden;
+        padding-top: 10px;
+    }
+    .section2{
+        margin-top: 53%;
+        height: 400px
+    }
+    .column{
+        width: 30%;
+    }
+    footer{
+        margin-top: 10%;
+    }
+    .chart{
+        width: 125%;;
+    }
+}
+
+@media screen and (max-width: 768px){
+    h1{
+        margin: 0 auto;
+    }
+    header{
+        height: 15%;
+    }
+    #menu{
+        width: 100%;
+    }
+    .split{
+        margin-top: 20%;
+        height: 75%;
+        width: 50%;
+        position: absolute;
+        z-index: 5;
+        top: 0;
+        overflow-x: hidden;
+        padding-top: 20px;
+    }
+    .button{
+        font-size: 20px;
+        padding: 10px 10px;
+        width: 180px;
+    }
+    .section2{
+        margin-top: 80%;
+    }
+    .column{
+        width: 100%;
+    }
+    footer{
+        margin-top: 15%;
+    }
+    .chart{
+        width: 120%;
+    }
+}
+@media screen and (max-width: 414px){
+    h1{
+        margin: 0 auto;
+        font-size: 25px;
+    }
+    #menu{
+        width: 95%;
+    }
+    #menu li a{
+      font-size: 15px
+    }
+    .split{
+    margin-top: 30%;
+    height: 70%;
+    width: 50%;
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    overflow-x: hidden;
+    padding-top: 20px;
+    }
+    h2{
+      font-size: 20px;
+    }
+    p{
+      font-size: 15px;
+    }
+    .button{
+    font-size: 20px;
+    padding: 10px 10px;
+    width: 200px;
+    }
+    .section2{
+      margin-top: 145%;
+    }
+    .column{
+        width: 100%;
+    }
+    footer{
+        margin-top: 20%;
+    }
+    .chart{
+        width: 110%;
+    }
+}

@@ -1,0 +1,123 @@
+header{
+    width: 100%;
+    background-color: white;
+}
+h1{
+    font-family: 'Nanum Gothic', sans-serif;
+    font-size: 30px;
+    color: #111;
+    margin: 10px;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+body {
+    margin:0 auto;
+    font-family: 'Nanum Gothic', sans-serif;
+    }
+
+img{
+    margin-right: 10px;
+    width: 90px;
+    height: 90px;
+}
+#tit{
+    text-align: center;
+    font-size: 28px;
+    font-weight: bold;
+    color: #222;
+}
+#menu ul {
+    list-style-type: none;
+    margin-top: 10px;
+    padding: 0;
+    overflow: hidden;
+    background-color: #444;
+    top: 0;
+    width: 100%;
+}
+
+#menu li {
+    float: left;
+}
+
+#menu li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+#menu li a:hover:not(.active) {
+    background-color: #2196F3;
+}
+
+.active {
+    background-color: #f4511e;
+}
+table{
+    border-collapse: collapse;
+    width: 75%;
+    margin: auto;
+    background-color: white;
+}
+table, td, th{
+    border: 0.03px solid gray;
+    text-align: center;
+    height: 50px;
+}
+#info th{
+    background-color: #f2f2f2;
+}
+.split{
+    margin-top: 11%;
+    height: 65%;
+    width: 50%;
+    position:absolute;
+    z-index: 1;
+    top: 0;
+    overflow-x: hidden;
+    padding-top: 20px;
+}
+.left{
+    left: 0;
+    background-color: #e1e1e1;
+}
+.right{
+    right: 0;
+    background-color: bisque;
+}
+.centered{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+button{
+    background-color: #eb8741;
+    border-radius: 5px;
+    padding: 5px;
+    border: none;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    margin: 4px;
+    cursor: pointer;
+}
+@media screen and (max-width: 414px){
+    h1{
+        font-size: 30px;
+    }
+    p{
+        font-size: 20px;
+    }
+    button{
+        width: 40%;
+        height: 25%;
+    }
+}

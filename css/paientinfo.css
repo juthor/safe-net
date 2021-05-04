@@ -1,0 +1,164 @@
+
+header{
+   width: 100%;
+   background-color: white;
+}
+h1{
+   font-family: 'Nanum Gothic', sans-serif;
+   font-size: 30px;
+   color: #111;
+   margin: 10px;
+}
+a{
+   text-decoration: none;
+   color: black;
+}
+body {
+   margin:0 auto;
+   font-family: 'Nanum Gothic', sans-serif;
+   }
+
+img{
+   margin-right: 10px;
+   width: 90px;
+   height: 90px;
+}
+#menu ul {
+   list-style-type: none;
+   margin-top: 10px;
+   padding: 0;
+   overflow: hidden;
+   background-color: #444;
+   top: 0;
+   width: 100%;
+}
+
+#menu li {
+   float: left;
+}
+
+#menu li a {
+   display: block;
+   color: white;
+   text-align: center;
+   padding: 14px 16px;
+   text-decoration: none;
+}
+
+#menu li a:hover:not(.active) {
+   background-color: #2196F3;
+}
+
+.active {
+   background-color: #4CAF50;
+}
+.split{
+   margin-top: 11%;
+   height: 65%;
+   width: 50%;
+   position:absolute;
+   z-index: 1;
+   top: 0;
+   overflow-x: hidden;
+   padding-top: 20px;
+}
+.left{
+   left: 0;
+   background-color: bisque;
+}
+.right{
+   right: 0;
+   background-color: #c5cef2;
+}
+.centered{
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   text-align: center;
+}
+.button{
+   border-radius: 4px;
+   background-color: #eb6338;
+   border: none;
+   color: #FFFFFF;
+   text-align: center;
+   font-size: 22px;
+   padding: 10px 10px;
+   width: 240px;
+   transition: all 0.5s;
+   cursor: pointer;
+   margin: 5px;
+}
+.button span{
+   cursor: pointer;
+   display: inline-block;
+   position: relative;
+   transition: 0.5s;
+}
+.button span:after{
+   content: '\00bb';
+   position: absolute;
+   opacity: 0;
+   top: 0;
+   right: -20px;
+   transition: 0.5s;
+}
+.button:hover span{
+   padding-right: 25px;
+}
+.button:hover span:after{
+   opacity: 1;
+   right: 0;
+}
+@media screen and (max-width: 1440px){
+   h1{ margin: 0 auto;}
+   .split{
+       margin-top: 10.5%;
+       height: 60%;
+       width: 50%;
+       position: absolute;
+       z-index: 1;
+       top: 0;
+       overflow-x: hidden;
+       padding-top: 20px;
+   }
+   h2{ font-size: 170%; }
+
+   p{ font-size: 110%; }
+}
+@media screen and (max-width: 1024px){
+   h1{ margin: 0 auto; }
+   p{ font-size: 88%; }
+   .split{
+       margin-top: 15%;
+       height: 60%;
+       width: 50%;
+       position: absolute;
+       z-index: 1;
+       top: 0;
+       overflow-x: hidden;
+       padding-top: 20px;
+   }
+   h2{ font-size: 140%; }
+}
+@media screen and (max-width: 768px){
+   h1{ margin: 0 auto; }
+   .split{
+       margin-top: 20%;
+       height: 60%;
+       width: 50%;
+       position: absolute;
+       z-index: 1;
+       top: 0;
+       overflow-x: hidden;
+       padding-top: 20px;
+   }
+   h2{ font-size: 125%; }
+   p{ font-size: 85%; }
+   .button{
+       font-size: 20px;
+       padding: 10px 10px;
+       width: 200px;
+   }
+}
